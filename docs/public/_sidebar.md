@@ -1,0 +1,4 @@
+- [Home](/)
+- [Les bases du langage](01-bases.md)
+- [Exercice n°1](ex1.md)
+- [Exercice n°2](ex2.md)
