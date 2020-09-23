@@ -8,6 +8,16 @@
 
 ## Description des objectifs pédagogiques
 
+* Dans cette formation, vous apprendrez
+    * A réaliser des scripts en Python
+    * A reconnaître et traiter une erreur Python
+    * A suivre les bonnes pratiques de développement
+    * A documenter du code et un projet
+    * A versionner avec Git
+    * Les bases du CI/CD
+
+> Une mise en pratique après la formation est indispensable.
+
 ---
 
 ## Introduction à Python
@@ -16,12 +26,12 @@
 
 ### Python VS les autres languages
 
-* Librairies disponibles pour tous les Cloud Providers
 * Installé par défaut sur la plupart des distributions Linux
 * Pas de compilation, l'exécution du code est immédiate
 * Courbe d'apprentissage rapide
 * Langage structurant
 * Beaucoup de documentation et d'exemples sur internet
+* Librairies disponibles pour tous les Cloud Providers
 * C'est aussi, une question d'appétence !
 
 ---
@@ -41,14 +51,14 @@
 ### Python et le Cloud
 
 - Amazon AWS
-    - Lambda serverless
-    - Boto3
+    - [Lambda serverless](https://docs.aws.amazon.com/fr_fr/lambda/latest/dg/lambda-python.html)
+    - [Boto3](https://aws.amazon.com/fr/sdk-for-python/)
 - Microsoft Azure
-    - Azure Functions
-    - az-cli
+    - [Azure Functions](https://docs.microsoft.com/fr-fr/azure/azure-functions/functions-reference-python)
+    - [azure-cli](https://github.com/Azure/azure-cli)
 - Google GCP
-    - Cloud Functions
-    - App Engine
+    - [Cloud Functions](https://cloud.google.com/functions/docs/quickstart-python?hl=fr)
+    - [App Engine](https://cloud.google.com/appengine/docs/python?hl=fr)
 
 ---
 
@@ -58,8 +68,7 @@
 - **Python 2** n'est plus supporté par l'éditeur depuis le 1er Janvier 2020
 - Encodage natif en UTF8
 - Coroutines avec AsyncIO
-
-*Les principales différences sont décrites [ici](https://python-future.org/compatible_idioms.html)*
+- Les principales différences sont décrites [ici](https://python-future.org/compatible_idioms.html)
 
 ---
 
@@ -73,17 +82,16 @@
 
 ### IDE pour Python
 
-- VSCode
-- Pycharm
-- Eclipse
-- notepadd++ (windows)
-- vim (linux)
+- [VSCode](https://code.visualstudio.com/)
+- [Pycharm](https://www.jetbrains.com/fr-fr/pycharm/)
+- [Eclipse Pydev](https://www.pydev.org/)
+- [Atom](https://atom.io/packages/ide-python)
 
 ---
 
 ### Trouver de l'aide sur Python
 
-- Fonction help
+- Fonction help dans le shell Python
 - [stackoverflow](https://stackoverflow.com/questions/tagged/python)
 - [developpez.com](https://python.developpez.com/)
 - [Algorithmie](https://github.com/TheAlgorithms/Python/blob/master/DIRECTORY.md)
@@ -122,25 +130,9 @@
 
 ### Les bases du langage (partie 3/3)
 
+* Les dates avec le module datetime
 * Lecture et écriture dans un fichier
-* Les modules standards fournis avec Python
-* Le module time
-* Le module datetime
 * Passage du shell au script Python
-
----
-
-## Exercice 1
-
-Un client vous demande de générer un fichier [**.htaccess**](http://httpd.apache.org/docs/current/howto/htaccess.html) pour Apache à partir d'une liste d'adresse IP qu'il vous fournit dans un ticket. 
-
-Dans un premier temps, nous allons uniquement afficher le résultat à l'écran, plus tard nous verrons comment l'écrire dans un fichier.
-
-[Lien vers l'exercice](EXERCICE_URL/#/ex1.html)
-
----
-
-### Correction de l'exercice n°1
 
 ---
 
@@ -148,11 +140,32 @@ Dans un premier temps, nous allons uniquement afficher le résultat à l'écran,
 
 ---
 
-## Exercice 2
+## Exercice n°1
+
+Un client vous demande de générer un fichier [htaccess](http://httpd.apache.org/docs/current/howto/htaccess.html) pour Apache à partir d'une liste d'adresse IP qu'il vous fournit dans un ticket. 
+
+Dans un premier temps, nous allons uniquement afficher le résultat à l'écran, plus tard nous verrons comment l'écrire dans un fichier.
+
+[Lien vers l'exercice](EXERCICE_URL/#/exercices/ex1){:target="_blank"}
+
+---
+
+### Correction de l'exercice n°1
+
+---
+
+## Lecture d'un fichier CSV
+
+* Lecture avec un tableau par ligne (csv.reader)
+* Lecture avec un dictionnaire par ligne (csv.DictReader)
+
+---
+
+## Exercice n°2
 
 La demande du client évolue, vous allez maintenant générer le fichier .htaccess à partir d’un fichier CSV qui contiendra également une colonne pour appliquer un Deny ou un Allow sur chaque adresse IP
 
-[Lien vers l'exercice](EXERCICE_URL/#/ex2.html)
+[Lien vers l'exercice](EXERCICE_URL/#/exercices/ex2)
 
 ---
 
@@ -176,11 +189,11 @@ La demande du client évolue, vous allez maintenant générer le fichier .htacce
 
 ---
 
-## Exercice 3
+## Exercice n°3
 
 À la suite d’erreurs dans le format d’adresse IP, vous allez ajouter une validation du format dans le générateur de fichier .htaccess à l’aide du module standard [ipaddress](https://docs.python.org/fr/3.7/library/ipaddress.html) 
 
-[Lien vers l'exercice](EXERCICE_URL/#/ex3.html)
+[Lien vers l'exercice](EXERCICE_URL/#/exercices/ex3)
 
 ---
 
@@ -216,6 +229,8 @@ La demande du client évolue, vous allez maintenant générer le fichier .htacce
 
 Transformez le code du générateur de fichier .htaccess en le réécrivant sous forme de fonction et appelez les fonctions à l’intérieur d’une fonction main.
 
+[Lien vers l'exercice](EXERCICE_URL/#/exercices/ex4)
+
 ---
 
 ### Correction de l'exercice n°4
@@ -238,6 +253,8 @@ Transformez le code du générateur de fichier .htaccess en le réécrivant sous
 
 Appliquez les bonnes pratiques du nommage et documentez le code & projet pour le générateur de fichier .htaccess
 
+[Lien vers l'exercice](EXERCICE_URL/#/exercices/ex5)
+
 ---
 
 ### Correction de l'exercice n°5
@@ -252,6 +269,8 @@ Appliquez les bonnes pratiques du nommage et documentez le code & projet pour le
 
 Dans le générateur de fichier .htaccess, utilisez argparse pour choisir l’emplacement du fichier CSV et le niveau de logging.
 
+[Lien vers l'exercice](EXERCICE_URL/#/exercices/ex6)
+
 ---
 
 ### Correction de l'exercice n°6
@@ -265,6 +284,8 @@ Dans le générateur de fichier .htaccess, utilisez argparse pour choisir l’em
 ## Exercice n°7
 
 Dans le générateur de fichier .htaccess, utilisez argparse pour choisir l’emplacement du fichier CSV et le niveau de logging.
+
+[Lien vers l'exercice](EXERCICE_URL/#/exercices/ex7)
 
 ---
 
@@ -282,6 +303,8 @@ Dans notre générateur, configurez l’emplacement du fichier .htaccess à l’
 
 Créez et utilisez un template Jinja pour formater le fichier .htaccess
 
+[Lien vers l'exercice](EXERCICE_URL/#/exercices/ex8)
+
 ---
 
 ### Correction de l'exercice n°8
@@ -295,6 +318,8 @@ Créez et utilisez un template Jinja pour formater le fichier .htaccess
 ## Exercice n°9
 
 Créez un test unitaire pour la fonction qui renvoi le résultat du template Jinja.
+
+[Lien vers l'exercice](EXERCICE_URL/#/exercices/ex9)
 
 ---
 
@@ -321,6 +346,8 @@ Créez un test unitaire pour la fonction qui renvoi le résultat du template Jin
 
 Automatisez l’exécution du test unitaire développé lors de l’exercice n°9 pour qu’il s’exécute à chaque commit du code sur Gitlab.
 
+[Lien vers l'exercice](EXERCICE_URL/#/exercices/ex10)
+
 ---
 
 ### Correction de l'exercice n°10
@@ -335,6 +362,8 @@ Automatisez l’exécution du test unitaire développé lors de l’exercice n°
 
 Ajoutez l’automatisation du test qualité au fichier .gitlab-ci.yml
 
+[Lien vers l'exercice](EXERCICE_URL/#/exercices/ex11)
+
 ---
 
 ### Correction de l'exercice n°11
@@ -344,6 +373,8 @@ Ajoutez l’automatisation du test qualité au fichier .gitlab-ci.yml
 ## Exercice n°12
 
 Dépannez et améliorez les scripts qui vous seront fournis
+
+[Lien vers l'exercice](EXERCICE_URL/#/exercices/ex12)
 
 ---
 
@@ -375,6 +406,8 @@ Dépannez et améliorez les scripts qui vous seront fournis
 
 Avec la librairie requests, téléchargez le contenu du service web  https://jsonplaceholder.typicode.com/todos et écrivez le dans un fichier todos.json
 
+[Lien vers l'exercice](EXERCICE_URL/#/exercices/ex13)
+
 ---
 
 ### Correction de l’exercice n°13
@@ -388,6 +421,8 @@ Avec la librairie requests, téléchargez le contenu du service web  https://jso
 ## Exercice n°14
 
 Fournissez une route avec Flask qui exposera le service web /todos et consommez ce service avec requests.
+
+[Lien vers l'exercice](EXERCICE_URL/#/exercices/ex14)
 
 ---
 
@@ -421,6 +456,8 @@ Fournissez une route avec Flask qui exposera le service web /todos et consommez 
 
 Ajoutez un setup.py au générateur de fichier .htaccess et modifiez, le CI/CD pour l’utiliser lors de l’installation.
 
+[Lien vers l'exercice](EXERCICE_URL/#/exercices/ex15)
+
 ---
 
 ### Correction de l’exercice n°15
@@ -442,6 +479,8 @@ Ajoutez un setup.py au générateur de fichier .htaccess et modifiez, le CI/CD p
 
 Chaque participant va créer une nouvelle branche de son projet et introduire des bugs qui seront corrigés par un autre participant.
 
+[Lien vers l'exercice](EXERCICE_URL/#/exercices/ex16)
+
 ---
 
 ## Exécution de commandes systèmes
@@ -454,6 +493,8 @@ Chaque participant va créer une nouvelle branche de son projet et introduire de
 ## Exercice n°17
 
 A l’aide de subprocess ou de pyinvoke, afficher la liste des fichiers du répertoire courant.
+
+[Lien vers l'exercice](EXERCICE_URL/#/exercices/ex17)
 
 ---
 

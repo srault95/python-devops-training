@@ -9,7 +9,7 @@ npm install -g reveal-md
 **Lien http vers le site contenant les exercices:**
 
 ```shell
-export EXERCICE_URL=http://127.0.0.1:8080
+export LBN_EXERCICE_URL=http://127.0.0.1:8000
 ```
 
 **Pour visualiser les slides:**
