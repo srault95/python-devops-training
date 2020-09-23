@@ -100,21 +100,23 @@
 * Python en ligne de commande
 * Le shell Python
 * Les types de base
-* Types numériques
 * Variables & Constantes
 * Formatage des chaines
+* Manipulation de chaines
+* Calcul avec les types numériques
 
 ---
 
 ### Les bases du langage (partie 2/3)
 
+* Le type None
 * Le type Boolean
 * Les tableaux indexés (list/tuple)
 * Le tableau associatif (dict)
 * Python et l’indentation
-* La boucle for in
+* La boucle for
+* La boucle while
 * Conditions if/elif/else
-* La fonction print
 
 ---
 
@@ -123,7 +125,6 @@
 * Lecture et écriture dans un fichier
 * Les modules standards fournis avec Python
 * Le module time
-* La boucle while
 * Le module datetime
 * Passage du shell au script Python
 
