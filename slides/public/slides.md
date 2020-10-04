@@ -75,7 +75,7 @@
 ### L'Ecosystème Python
 
 - [Dépôt central des projets Python](https://pypi.org/)
-- [Référentiel d'outils et projet Python](https://github.com/vinta/awesome-python)
+- [Référentiel d'outils et projets Python](https://github.com/vinta/awesome-python)
 - [Github](https://github.com/topics/python?l=python&o=desc&s=stars)
 
 ---
@@ -146,7 +146,7 @@ Un client vous demande de générer un fichier [htaccess](http://httpd.apache.or
 
 Dans un premier temps, nous allons uniquement afficher le résultat à l'écran, plus tard nous verrons comment l'écrire dans un fichier.
 
-[Lien vers l'exercice](EXERCICE_URL/#/exercices/ex1){:target="_blank"}
+[Lien vers l'exercice](EXERCICE_URL/#/exercices/ex1)
 
 ---
 
@@ -158,6 +158,8 @@ Dans un premier temps, nous allons uniquement afficher le résultat à l'écran,
 
 * Lecture avec un tableau par ligne (csv.reader)
 * Lecture avec un dictionnaire par ligne (csv.DictReader)
+
+[Lien vers les exemples](EXERCICE_URL/#/02-csv)
 
 ---
 
@@ -175,17 +177,13 @@ La demande du client évolue, vous allez maintenant générer le fichier .htacce
 
 ## Gestion des erreurs en Python
 
----
-
-### Intégration de la gestion d’erreur au générateur de fichier .htaccess
+[Lien vers la documentation](EXERCICE_URL/#/03-exceptions)
 
 ---
 
 ## Les logs Python avec le module logging
 
----
-
-### Intégration de logging au générateur de fichier .htaccess
+[Lien vers la documentation](EXERCICE_URL/#/04-logging)
 
 ---
 
@@ -283,15 +281,13 @@ Dans le générateur de fichier .htaccess, utilisez argparse pour choisir l’em
 
 ## Exercice n°7
 
-Dans le générateur de fichier .htaccess, utilisez argparse pour choisir l’emplacement du fichier CSV et le niveau de logging.
+Dans notre générateur, configurez l’emplacement du fichier .htaccess à l’aide d’une variable d’environnement.
 
 [Lien vers l'exercice](EXERCICE_URL/#/exercices/ex7)
 
 ---
 
 ### Correction de l'exercice n°7
-
-Dans notre générateur, configurez l’emplacement du fichier .htaccess à l’aide d’une variable d’environnement.
 
 ---
 

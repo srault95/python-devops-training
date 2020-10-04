@@ -34,6 +34,6 @@ Deny from all
 ## Les acquis
 
 - Python list (tableau indexé)
-- Boucle for
+- Boucle for dans un tableau
 - Écriture dans un fichier texte
 - Commit git

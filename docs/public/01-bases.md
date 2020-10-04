@@ -49,7 +49,7 @@ $ python3
 20
 
 >>> MY_VAR = 10
-# L'instruction suivante ne devrait pas fonctionné si c'était une vraie constante
+# L'instruction suivante ne devrait pas fonctionner si c'était une vraie constante
 >>> MY_VAR += 10
 >>> print(MY_VAR)
 20
@@ -259,7 +259,7 @@ AttributeError: 'tuple' object has no attribute 'append'
 ## Le tableau associatif (dict)
 
 ```python
-
+TODO...
 ```
 
 ## Python et l’indentation
@@ -478,4 +478,4 @@ Il y a deux choses à faire pour rendre exécutable le script:
 chmod +x /my-first-script.py
 ```
 
-**La seconde:** c'est d'ajouter `#!/usr/bin/env python` en première ligne du script
+**La seconde:** est d'ajouter `#!/usr/bin/env python` en première ligne du script

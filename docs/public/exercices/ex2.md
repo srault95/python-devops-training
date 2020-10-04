@@ -4,7 +4,7 @@
 
 La demande du client évolue, vous allez maintenant générer le fichier htaccess.txt à partir d’un fichier [CSV](https://docs.python.org/fr/3.7/library/csv.html#csv.reader) qui contiendra également une colonne pour appliquer un Deny ou un Allow sur chaque adresse IP.
 
-> Le fichier à générer se nomme habituellement .htaccess (sans extension) mais pour simplifier son utilisation, nous allons le nommer htaccess.txt
+> Le fichier à générer se nomme habituellement .htaccess mais pour simplifier son utilisation, nous allons le nommer htaccess.txt
 
 ## Fichier CSV
 
@@ -23,6 +23,8 @@ IP Address,Rule
 4. Quand le script fonctionne, effectuez un commit avec le libellé "exercice 2 done" et un push
 
 ## Résultat attendu
+
+Le fichier htaccess.txt doit contenir:
 
 ```
 Order Allow, Deny

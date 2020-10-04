@@ -6,7 +6,7 @@ output = [
     "Order Allow, Deny"
 ]
 
-with open('exercices/exercice-02/ip-addresses.csv') as fp:
+with open('ip-addresses.csv') as fp:
     reader = csv.DictReader(fp)
     for row in reader:
         
