@@ -1,0 +1,1 @@
+# Consommation de service web avec la librairie requests

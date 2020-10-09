@@ -207,19 +207,7 @@ La demande du client évolue, vous allez maintenant générer le fichier .htacce
 
 ---
 
-## Environnement d’exécution Python (virtualenv, pip)
-
----
-
-## Installation et utilisation du shell IPython
-
----
-
 ## Les fonctions en Python
-
----
-
-### La pseudo fonction main
 
 ---
 
@@ -232,10 +220,6 @@ Transformez le code du générateur de fichier .htaccess en le réécrivant sous
 ---
 
 ### Correction de l'exercice n°4
-
----
-
-## Les bonnes pratiques du nommage
 
 ---
 
@@ -386,10 +370,6 @@ Dépannez et améliorez les scripts qui vous seront fournis
 
 ---
 
-## Lecture/Ecriture de fichier XML
-
----
-
 ## Survol des modules standards Python les plus utiles
 
 ---
@@ -444,7 +424,7 @@ Fournissez une route avec Flask qui exposera le service web /todos et consommez 
 
 ---
 
-## L’installation d’un projet Python avec setup.py
+## Le déploiement d’un projet Python avec setup.py
 
 ---
 
@@ -500,6 +480,8 @@ A l’aide de subprocess ou de pyinvoke, afficher la liste des fichiers du répe
 
 ## Les possibilités de traitements parallèles en Python
 
+- https://www.programmersought.com/article/32442087347/
+
 - Le multi threading
 - Le multi processing
 - Les coroutines
@@ -532,4 +514,4 @@ A l’aide de subprocess ou de pyinvoke, afficher la liste des fichiers du répe
 
 ---
 
-## Questions/Réponse et conclusion de la formation
+## Questions/Réponses et conclusion de la formation

@@ -2,12 +2,12 @@
 
 ## Introduction au format CSV
 
-La base commune à tous les fichiers CSV:
+**La base commune à tous les fichiers CSV:**
 - La 1ère ligne contient les titres (optionnel)
 - 1 ligne par enregistrement (équivalent à 1 ligne d'un tableur)
 - 1 séparateur de colonne
 
-Ce qui peut varier d'un fichier CSV à l'autre
+**Ce qui peut varier d'un fichier CSV à l'autre**
 - Le séparateur entre chaque champs: virgule, point virgule, tabulation, autres...
 - Les caractères pour encadrer chaque champs: rien, simple quote, double quote
 - Le(s) caractère(s) de fin de ligne: LF ou CRLF
