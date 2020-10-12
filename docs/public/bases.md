@@ -128,6 +128,30 @@ f"\"{first_name} {last_name}\""
 '"Alain DURANT"'
 ```
 
+## Triple quotes
+
+```python
+"""
+Commentaires sur 
+plusieurs 
+ligne
+"""
+
+"""
+# pour commenter du code
+a = [1, 2, 3]
+"""
+
+first_name = "Alain"
+last_name = "DURANT"
+city = "Paris"
+print(f"""First Name: {first_name}
+Last Name: {last_name}
+City: {city}
+""")
+
+```
+
 ## Manipulation de chaines
 
 ```python

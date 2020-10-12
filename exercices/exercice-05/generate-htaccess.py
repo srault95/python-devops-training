@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import csv
 import sys
@@ -15,17 +15,26 @@ OUTPUT_FILENAME = "htaccess.txt"
 
 
 def parse_csv(csv_filename=CSV_FILENAME):
-    """"""
+    """Parse CSV File
+    
+    :param csv_filename: CSV File Name
+    :type csv_filename: str
+    :return: A Array of IP Address with Allow/Deny rule
+    :rtype: list
+    """
 
     datas = []
 
     with open(csv_filename) as fp:
+        # Parse file to dict
         reader = csv.DictReader(fp)
+        
         for line_num, row in enumerate(reader):
 
             row_ip = row['IP Address']
             
             try:
+                # Check if valid ip address
                 ipaddress.ip_address(row_ip)
             except Exception as err:
                 msg = f"Invalid ipaddress : {row_ip} - line : {line_num}"
@@ -37,6 +46,7 @@ def parse_csv(csv_filename=CSV_FILENAME):
             elif row['Rule'] == "Deny":
                 line = f"Deny from {row_ip}"
             else:
+                # exclude invalid rule and log
                 logger.error(f"Unknow rule error. Rule found : row['Rule']")
                 continue
             
@@ -46,7 +56,13 @@ def parse_csv(csv_filename=CSV_FILENAME):
 
 
 def write_file(datas, output_filename=OUTPUT_FILENAME):
-    """"""
+    """Write htaccess file on disk
+    
+    :param datas: Array of IPAddress and rules
+    :type datas: list
+    :param output_filename: htaccess filepath (default: htaccess.txt)
+    :type output_filename: str
+    """
 
     with open(OUTPUT_FILENAME, "w") as fp:
         for out in datas:
@@ -54,6 +70,7 @@ def write_file(datas, output_filename=OUTPUT_FILENAME):
 
 
 def main():
+    """main function"""
 
     logger.info(f"START {__file__}. Input file: {CSV_FILENAME} - Output file: {OUTPUT_FILENAME}")
 
@@ -61,8 +78,10 @@ def main():
         logger.critical(f"No such file {CSV_FILENAME}")
         sys.exit(1)
     
+    # Parse CSV file
     datas = parse_csv(CSV_FILENAME)
     
+    # Add requires informations to first and last line
     datas.insert(0, "Order Allow, Deny")
     datas.append("Deny from all")
     
@@ -71,4 +90,4 @@ def main():
     logger.info(f"END {__file__}")
 
 if __name__ == "__main__":
-    pass
+    main()

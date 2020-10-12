@@ -233,7 +233,7 @@ Transformez le code du générateur de fichier .htaccess en le réécrivant sous
 
 ## Exercice n°5
 
-Appliquez les bonnes pratiques du nommage et documentez le code & projet pour le générateur de fichier .htaccess
+Appliquez les bonnes pratiques de nommage. Documentez le code et le projet pour le générateur de fichier .htaccess
 
 [Lien vers l'exercice](EXERCICE_URL/#/exercices/ex5)
 

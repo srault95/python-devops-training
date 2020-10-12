@@ -46,3 +46,4 @@
 - [Introduction aux fonctions Lambda sur AWS en Python](/serverless-aws)
 - [Introduction à Ansible](/ansible)
 - [Jeux surprise](/surprise-games)
+- [Liens](/python-links)

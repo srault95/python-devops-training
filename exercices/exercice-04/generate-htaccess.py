@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import csv
 import sys
@@ -68,4 +68,4 @@ def main():
     logger.info(f"END {__file__}")
 
 if __name__ == "__main__":
-    pass
+    main()
