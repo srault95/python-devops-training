@@ -6,5 +6,5 @@
 ## Documentation et exercices
 
 ```shell
-python -m http.server -d docs/public
+python -m http.server -d docs
 ```
