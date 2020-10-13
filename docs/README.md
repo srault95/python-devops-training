@@ -1,6 +1,3 @@
-# Documentation et exercices de la formation d'initiation à Python
+# Python Training
 
-
-```shell
-python -m http.server -d public
-```
+Vous trouverez dans cette documentation, des exemples de code Python ainsi que des exercices.
