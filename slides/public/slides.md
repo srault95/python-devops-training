@@ -65,6 +65,7 @@
 ### Python2 vs Python3
 
 - **Python 3** est disponible depuis **fin 2008**
+    - La version minimum encore maintenu est la 3.6 jusqu'au 23/12/2021
 - **Python 2** n'est plus supporté par l'éditeur depuis le 1er Janvier 2020
 - Encodage natif en UTF8
 - Coroutines avec AsyncIO
@@ -72,7 +73,7 @@
 
 ---
 
-### L'Ecosystème Python
+### L'Eco-système Python
 
 - [Dépôt central des projets Python](https://pypi.org/)
 - [Référentiel d'outils et projets Python](https://github.com/vinta/awesome-python)
@@ -468,7 +469,7 @@ Chaque participant va créer une nouvelle branche de son projet et introduire de
 
 ## Exercice n°17
 
-A l’aide de subprocess ou de pyinvoke, afficher la liste des fichiers du répertoire courant.
+A l’aide de subprocess ou de pyinvoke, affichez la liste des fichiers du répertoire courant.
 
 [Lien vers l'exercice](EXERCICE_URL/#/exercices/ex17)
 

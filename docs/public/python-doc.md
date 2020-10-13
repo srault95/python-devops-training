@@ -15,3 +15,4 @@ Exemple de documentation généré partiellement à partir des docstrings:
 - https://arrow.readthedocs.io/en/stable/#module-arrow.arrow
 - https://raw.githubusercontent.com/arrow-py/arrow/master/docs/index.rst
 - https://github.com/arrow-py/arrow/blob/master/arrow/arrow.py#L32
+

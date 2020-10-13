@@ -1,0 +1,3 @@
+- [Accueil](/)
+- [Installation de Python](/../references/python-install)
+- [Installation VSCode]()

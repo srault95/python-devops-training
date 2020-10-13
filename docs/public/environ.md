@@ -15,4 +15,12 @@ python tp_environ.py
 
 HOST=2.2.2.2 python tp_environ.py
 2.2.2.2:8080
+
+HOST=2.2.2.2 PORT=8181 python tp_environ.py
+2.2.2.2:8181
+
+export HOST=3.3.3.3
+export PORT=8181
+python tp_environ.py
+3.3.3.3:8181
 ```

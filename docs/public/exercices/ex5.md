@@ -6,14 +6,16 @@ Appliquez les bonnes pratiques de nommage en documentant le code et le projet po
 
 ## Opérations à réaliser
 
-- Documentez les fonctions du module python
-- Créez un fichier README.md à la racine du projet et documentez:
+1. Documentez les fonctions du module python
+2. Créez un fichier README.md à la racine du projet et documentez:
     - Le titre du projet
     - Une courte explication de l'objectif du projet
     - Les pré-requis
     - La procédure d'installation (quand il y en a une)
     - Un exemple d'utilisation
     - Une todolist des évolutions à venir
+3. Quand vous avez terminé, effectuez un commit avec le libellé "exercice 5 done" et un push
+4. Ouvrez votre projet dans GitLab pour vérifier la mise en page de la documentation du projet
 
 ## Acquis
 
